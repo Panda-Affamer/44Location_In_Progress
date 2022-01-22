@@ -1,0 +1,27 @@
+{% extends './header.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- Banniere -->
+  <section id="Dom">
+
+    <div class="Banniere">
+      <img name="ImageBanniere" alt="Images banniere" src="{% static 'images/koe.jpg' %}" />
+      <div class="BoutonContainer">
+
+        <div data-car="{{car}}"></div>
+
+        <div id="left" class="Bouton Gauche"></div>
+
+        <img name="PlayPause" id="PlayPause" src="https://img.icons8.com/metro/1600/pause.png" alt="Logo pause">
+
+        <div id="right" class="Bouton Droite"></div>
+
+      </div>
+    </div>
+
+  </section>
+
+
+{% endblock %}

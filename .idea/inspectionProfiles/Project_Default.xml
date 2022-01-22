@@ -1,0 +1,25 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyShadowingBuiltinsInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredNames">
+        <list>
+          <option value="license" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="mysite.home.models.Bike.objects" />
+          <option value="mysite.home.models.Order.objects" />
+          <option value="ecommerce.store.models.Order.objects" />
+          <option value="mysite.home.models.Product.objects" />
+          <option value="mysite.home.models.Category.objects" />
+          <option value="mysite.home.models.Customer.objects" />
+          <option value="home.models.Customer.objects" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

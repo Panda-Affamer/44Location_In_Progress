@@ -1,0 +1,56 @@
+{% extends './header.html' %}
+{% load static %}
+
+{% block content %}
+
+<body>
+
+<script>
+  function getData (id, callback) {
+    let result = {
+      data: "this is some data",
+      id: id
+    }
+    callback("Error getting data", undefined);
+}
+
+  function handleData(err, data) {
+    if (err) {
+      console.log(err)
+    }
+    else {
+      console.log(data)
+    }
+  }
+  getData(21323, handleData)
+
+
+
+    var TextLi="";
+    for (var i = 1; i < 5; i++) {
+        TextLi+="<li>"+ [i] + "</li>";
+    }
+    var NewDiv = document.createElement('div');
+    NewDiv.id = 'test';
+
+    document.body.appendChild(NewDiv);
+    var NewP = document.createElement('p');
+    NewDiv.appendChild(NewP);
+
+    var contentP = document.createTextNode("Titre");
+    NewP.appendChild(contentP);
+
+    var NewUl = document.createElement('ul');
+    NewDiv.appendChild(NewUl);
+
+
+    document.getElementsByTagName('ul')[0].innerHTML = TextLi;
+
+    console.log(document.getElementById('ul'));
+
+
+</script>
+
+</body>
+
+{% endblock %}
